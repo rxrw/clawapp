@@ -1,0 +1,59 @@
+name: clawapp
+description: "OpenClaw mobile client — native iOS-style app for your AI gateway."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # WebSocket & networking
+  web_socket_channel: ^3.0.1
+
+  # State management
+  provider: ^6.1.2
+
+  # Secure storage
+  flutter_secure_storage: ^9.2.3
+
+  # Markdown rendering
+  flutter_markdown: ^0.7.7
+
+  # UUID generation
+  uuid: ^4.5.1
+
+  # Ed25519 signing (pure Dart)
+  ed25519_edwards: ^0.3.1
+
+  # Crypto utilities
+  crypto: ^3.0.6
+
+  # JSON serialization helpers
+  shared_preferences: ^2.3.4
+
+  # Time formatting
+  timeago: ^3.7.0
+
+  # JSON with comments (for config display)
+  intl: ^0.20.2
+
+  # HTTP (for multicast discovery probe)
+  http: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+  fonts:
+    - family: SF Pro
+      fonts: []
